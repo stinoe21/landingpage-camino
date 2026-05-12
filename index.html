@@ -22,7 +22,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
     :root {
@@ -37,13 +37,14 @@
       --green-light: #a8c98c;
       --cream:       #f7f5f0;
       --nav-h:       72px;
+      --sans:        Futura, "Futura PT", "Avenir Next", "Century Gothic", Inter, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       background: var(--bg);
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: var(--sans);
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
@@ -83,8 +84,8 @@
 
     .nav-logo {
       display: flex; align-items: center;
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 500; font-size: 1.25rem; letter-spacing: 0.005em;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-weight: 500; font-size: 1.45rem; letter-spacing: 0.005em;
       background: none; border: none; cursor: pointer; color: inherit;
     }
     .nav-links { display: flex; align-items: center; gap: 2.5rem; }
@@ -111,7 +112,7 @@
     }
     .lang-btn {
       background: none; border: none; cursor: pointer;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--sans);
       font-size: 0.72rem; font-weight: 500;
       letter-spacing: 0.16em; text-transform: uppercase;
       color: var(--ink-soft);
@@ -149,7 +150,7 @@
       display: inline-flex; align-items: center; gap: 0.6rem;
       padding: 0.95rem 1.8rem;
       background: var(--green); color: var(--cream);
-      border-radius: 100px; font-family: 'Inter', sans-serif;
+      border-radius: 100px; font-family: var(--sans);
       font-size: 0.92rem; font-weight: 500; letter-spacing: 0.01em;
       border: none; cursor: pointer;
       transition: background 0.2s, transform 0.2s; text-decoration: none;
@@ -194,7 +195,7 @@
       color: rgba(247,245,240,0.5); margin-bottom: 1.25rem;
     }
     .hero-title {
-      font-family: 'Fraunces', Georgia, serif;
+      font-family: 'Instrument Serif', Georgia, serif;
       font-weight: 400; font-variation-settings: "opsz" 144, "SOFT" 30;
       font-size: clamp(3.5rem, 8.5vw, 9.5rem);
       line-height: 0.94; letter-spacing: -0.035em;
@@ -206,7 +207,7 @@
       padding-top: 2rem; border-top: 1px solid rgba(247,245,240,0.12);
     }
     .hero-tagline {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 300;
       font-size: clamp(1rem, 1.3vw, 1.25rem);
       color: rgba(247,245,240,0.78); max-width: 44ch; line-height: 1.55;
     }
@@ -222,7 +223,7 @@
       display: grid; grid-template-columns: 1fr 1fr; gap: 7rem; align-items: start;
     }
     .intro-strip h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.5vw, 3.2rem); line-height: 1.04; letter-spacing: -0.02em;
     }
     .intro-strip h2 em { font-style: italic; color: var(--green); }
@@ -242,7 +243,7 @@
     .stat { padding: 3.5rem 2rem 3.5rem 6vw; border-right: 1px solid var(--line); }
     .stat:last-child { border-right: none; }
     .stat-number {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: clamp(2.5rem, 3.5vw, 3.5rem); color: var(--green);
       line-height: 1; letter-spacing: -0.02em; margin-bottom: 0.6rem;
     }
@@ -255,7 +256,7 @@
       margin-bottom: 3.5rem;
     }
     .plan-header h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.05; letter-spacing: -0.02em;
     }
     .plan-header h2 em { font-style: italic; color: var(--green); }
@@ -269,11 +270,11 @@
       align-items: baseline;
     }
     .plan-row .num {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic;
       font-size: 0.95rem; color: var(--green);
     }
     .plan-row .title {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 500;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 500;
       font-size: clamp(1.15rem, 1.5vw, 1.45rem); color: var(--ink); line-height: 1.25;
     }
     .plan-row .detail {
@@ -286,7 +287,7 @@
     .return-inner { max-width: 1200px; margin: 0 auto; }
     .return-header { margin-bottom: 3.5rem; max-width: 64ch; }
     .return-header h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.2vw, 3rem); line-height: 1.05; letter-spacing: -0.02em;
       margin-top: 1rem;
     }
@@ -302,18 +303,18 @@
       align-items: baseline;
     }
     .return-row .num {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic;
       font-size: 0.95rem; color: var(--green);
     }
     .return-row .title {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 500;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 500;
       font-size: clamp(1.15rem, 1.5vw, 1.45rem); color: var(--ink); line-height: 1.3;
     }
     .return-row .title-tag {
       display: inline-block; margin-left: 0.6rem;
       padding: 0.18rem 0.55rem;
       border: 1px solid var(--green); color: var(--green);
-      border-radius: 100px; font-family: 'Inter', sans-serif;
+      border-radius: 100px; font-family: var(--sans);
       font-size: 0.6rem; font-weight: 500; letter-spacing: 0.18em;
       text-transform: uppercase; vertical-align: middle; transform: translateY(-2px);
     }
@@ -322,112 +323,35 @@
       line-height: 1.55; text-align: right;
     }
 
-    /* SPONSOR TIERS (uit pitchdeck slide 6, geen bedragen) */
-    .tiers-section { padding: 7rem 6vw; max-width: 1200px; margin: 0 auto; }
-    .tiers-header {
-      display: flex; justify-content: space-between; align-items: flex-end;
-      margin-bottom: 3.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line);
-      gap: 2rem; flex-wrap: wrap;
+    /* SPONSOR CTA SECTION */
+    .sponsor-cta-section {
+      background: var(--bg-dark); padding: 8rem max(1.5rem, 5vw);
+      color: var(--cream); text-align: center;
     }
-    .tiers-header h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
-      font-size: clamp(1.8rem, 2.8vw, 2.8rem); line-height: 1.1; letter-spacing: -0.02em;
+    .sponsor-cta-inner { max-width: 820px; margin: 0 auto; }
+    .sponsor-cta-label { color: var(--green-light) !important; margin-bottom: 2rem; }
+    .sponsor-cta-section h2 {
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
+      font-size: clamp(2.75rem, 6vw, 5.5rem);
+      line-height: 0.96; letter-spacing: -0.03em; color: var(--cream); margin-bottom: 1.75rem;
     }
-    .tiers-header h2 em { font-style: italic; color: var(--green); }
-    .tiers-header p { font-size: 0.92rem; color: var(--ink-soft); max-width: 28ch; text-align: right; line-height: 1.55; }
-
-    .tiers-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    .sponsor-cta-section h2 em { font-style: italic; color: var(--green-light); }
+    .sponsor-cta-section p {
+      font-size: clamp(1rem, 1.2vw, 1.15rem); line-height: 1.7;
+      color: rgba(247,245,240,0.68); max-width: 44ch; margin: 0 auto 2.75rem;
     }
-    .tier {
-      padding: 2rem 1.75rem;
-      border-right: 1px solid var(--line);
-      display: flex; flex-direction: column; position: relative;
+    .sponsor-cta-actions {
+      display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
     }
-    .tier:first-child { padding-left: 0; }
-    .tier:last-child { padding-right: 0; border-right: none; }
-    .tier-main { background: rgba(168, 201, 140, 0.10); padding-left: 1.75rem; padding-right: 1.75rem; }
-    .tier-main:first-child { padding-left: 1.75rem; }
-    .tier-featured {
-      position: absolute; top: 1rem; right: 1rem;
-      font-size: 0.6rem; font-weight: 500; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--green);
-      padding: 0.18rem 0.55rem; border: 1px solid var(--green); border-radius: 100px;
+    .sponsor-cta-btn { background: var(--green) !important; color: var(--cream) !important; }
+    .sponsor-cta-btn:hover { background: var(--green-soft) !important; transform: translateY(-1px); }
+    .sponsor-cta-outline {
+      border-color: rgba(247,245,240,0.32) !important; color: rgba(247,245,240,0.82) !important;
+      background: transparent !important;
     }
-    .tier-tag {
-      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em;
-      text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.9rem;
-    }
-    .tier-main .tier-tag { color: var(--green); }
-    .tier-amount {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
-      font-size: clamp(1.8rem, 2.6vw, 2.6rem); color: var(--ink);
-      line-height: 1; margin-bottom: 0.4rem; letter-spacing: -0.01em;
-    }
-    .tier-main .tier-amount { color: var(--green); }
-    .tier-spots {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
-      font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 1.5rem;
-    }
-    .tier-examples {
-      font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5;
-      padding: 0.6rem 0.7rem; margin-bottom: 0.9rem;
-      background: rgba(61, 90, 61, 0.06); border-left: 2px solid var(--green);
-    }
-    .tier-examples strong {
-      font-weight: 500; color: var(--green); letter-spacing: 0.06em;
-      text-transform: uppercase; font-size: 0.65rem;
-      display: block; margin-bottom: 0.25rem;
-    }
-    .tier-examples em { font-style: normal; color: var(--ink); font-weight: 500; }
-    .tier-perks { list-style: none; }
-    .tier-perks li {
-      font-size: 0.88rem; color: var(--ink); line-height: 1.5;
-      padding: 0.6rem 0; border-top: 1px solid var(--line);
-      display: flex; gap: 0.55rem;
-    }
-    .tier-perks li:first-child { border-top: none; padding-top: 0; }
-    .tier-perks li::before { content: "→"; color: var(--green); flex-shrink: 0; }
-
-    /* Logo strip onderaan tiers (huidige sponsors) */
-    .partners-strip { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
-    .partners-label {
-      font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft);
-      margin-bottom: 1.5rem;
-    }
-    .partners-logos { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
-    .partner-slot {
-      display: flex; align-items: center; justify-content: center;
-      background: rgba(61,90,61,0.05); border: 1px dashed var(--line);
-      border-radius: 6px; color: var(--ink-soft); font-size: 0.72rem;
-      font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
-      width: 140px; height: 64px; transition: border-color 0.2s, background 0.2s;
-    }
-    .partner-slot:hover { border-color: var(--green); background: rgba(61,90,61,0.09); }
-
-    .partners-names {
-      display: flex; flex-wrap: wrap;
-      align-items: center; gap: 0.85rem 1.1rem;
-      font-family: 'Fraunces', Georgia, serif;
-      font-style: italic; font-weight: 400;
-      font-size: clamp(1.05rem, 1.35vw, 1.3rem);
-      color: var(--ink); line-height: 1.4;
-      margin-top: 0.25rem;
-    }
-    .partner-sep {
-      color: var(--ink-soft); opacity: 0.35;
-      font-style: normal; font-size: 0.85em;
-    }
-
-    .tiers-cta {
-      margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--line);
-      display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
-    }
-    .tiers-cta p {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
-      font-size: clamp(1rem, 1.25vw, 1.25rem); color: var(--ink-soft);
-      max-width: 46ch; line-height: 1.5;
+    .sponsor-cta-outline:hover {
+      background: rgba(247,245,240,0.07) !important;
+      border-color: rgba(247,245,240,0.6) !important; color: var(--cream) !important;
     }
 
     /* ========= VERHAAL (redesign — wider, alternating, dynamic) ========= */
@@ -436,7 +360,7 @@
       max-width: 1440px; margin: 0 auto;
     }
     .story-hero h1 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-variation-settings: "opsz" 144;
       font-size: clamp(2.75rem, 9vw, 9rem);
       line-height: 0.94; letter-spacing: -0.035em;
@@ -450,6 +374,15 @@
     #page-verhaal .story-hero h1 {
       max-width: 12ch;
       margin-bottom: 2.25rem;
+    }
+    #page-contact .story-hero {
+      padding-top: calc(var(--nav-h) + 2.5rem);
+      padding-bottom: 2.5rem;
+    }
+    #page-contact .story-hero h1 {
+      font-size: clamp(2.25rem, 5vw, 5rem);
+      margin: 1rem 0 2rem;
+      max-width: 16ch;
     }
     #page-verhaal .story-photo-full,
     #page-verhaal .story-photo-full + .story-body,
@@ -531,7 +464,7 @@
       margin-bottom: 0.5rem;
     }
     .ch-num-big {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: clamp(2.4rem, 4vw, 3.6rem); color: var(--green); line-height: 1;
     }
     .ch-label {
@@ -539,7 +472,7 @@
       color: var(--ink-soft);
     }
     .ch-content h3 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.05; letter-spacing: -0.02em;
       margin: 0 0 1rem;
     }
@@ -549,7 +482,7 @@
       color: var(--ink-soft); max-width: 56ch;
     }
     .ch-content p.ch-lead {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: clamp(1.1rem, 1.5vw, 1.45rem); line-height: 1.4;
       color: var(--ink); max-width: 32ch;
     }
@@ -632,7 +565,7 @@
     }
     .camino-map-card strong {
       display: block;
-      font-family: 'Fraunces', Georgia, serif;
+      font-family: 'Instrument Serif', Georgia, serif;
       font-size: clamp(1.15rem, 2.2vw, 1.65rem);
       font-weight: 400;
       line-height: 1.05;
@@ -734,7 +667,7 @@
       border-radius: 4px;
       background: var(--cream);
       color: var(--ink);
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: var(--sans);
       font-size: 0.78rem;
       box-shadow: 0 18px 42px rgba(13,13,13,0.18);
     }
@@ -797,7 +730,7 @@
       padding: clamp(5rem, 10vw, 8rem) max(1.5rem, 5vw);
     }
     .story-pullquote blockquote {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 300;
       font-size: clamp(1.5rem, 3.8vw, 3rem); line-height: 1.18; letter-spacing: -0.015em;
       color: inherit; max-width: 22ch; margin: 0 auto;
     }
@@ -824,7 +757,7 @@
       }
     }
     .philosophy-header h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.05; letter-spacing: -0.02em;
       margin-top: 1rem;
     }
@@ -848,11 +781,11 @@
     }
     .philo-card:hover { background: rgba(168, 201, 140, 0.10); }
     .philo-card .num {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: 2rem; color: var(--green); line-height: 1;
     }
     .philo-card .text {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: clamp(1.1rem, 1.4vw, 1.3rem); line-height: 1.4;
       color: var(--ink); margin-top: auto;
     }
@@ -888,7 +821,7 @@
       }
     }
     .story-closing h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.04; letter-spacing: -0.02em;
     }
     .story-closing h2 em { font-style: italic; color: var(--green); }
@@ -928,7 +861,7 @@
     .home-story-tease .visual .photo-ph { height: 100%; }
     .home-story-tease .text { display: flex; flex-direction: column; gap: 1.5rem; }
     .home-story-tease h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1.05; letter-spacing: -0.02em;
     }
     .home-story-tease h2 em { font-style: italic; color: var(--green); }
@@ -958,7 +891,7 @@
     }
     .home-journey .section-label { color: var(--green-light); }
     .home-journey h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.05; letter-spacing: -0.02em;
       margin-bottom: 1.5rem; color: var(--cream);
     }
@@ -975,7 +908,7 @@
       flex-wrap: wrap;
     }
     .home-journey-stat .v {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400;
       font-size: clamp(1.5rem, 2.2vw, 2.2rem); color: var(--green-light);
       line-height: 1; display: block; margin-bottom: 0.5rem;
     }
@@ -1019,7 +952,7 @@
     }
     .home-journey-map .route-label {
       fill: rgba(247,245,240,0.72);
-      font-family: Inter, sans-serif;
+      font-family: var(--sans);
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 1.4px;
@@ -1027,7 +960,7 @@
     }
     .home-journey-map .route-day {
       fill: rgba(247,245,240,0.46);
-      font-family: Inter, sans-serif;
+      font-family: var(--sans);
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 1px;
@@ -1035,7 +968,7 @@
     }
     .home-journey-map .route-distance {
       fill: rgba(247,245,240,0.34);
-      font-family: Inter, sans-serif;
+      font-family: var(--sans);
       font-size: 10px;
       letter-spacing: 1.6px;
     }
@@ -1048,7 +981,7 @@
       border-top: 1px solid var(--line);
     }
     .home-closing h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-variation-settings: "opsz" 144, "SOFT" 30;
       font-size: clamp(2.4rem, 6vw, 5rem);
       line-height: 0.98; letter-spacing: -0.025em;
@@ -1056,7 +989,7 @@
     }
     .home-closing h2 em { font-style: italic; color: var(--green); }
     .home-closing p {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
+      font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 300;
       font-size: clamp(1.05rem, 1.4vw, 1.4rem);
       color: var(--ink-soft); max-width: 42ch;
       margin: 0 auto 2.5rem; line-height: 1.5;
@@ -1073,7 +1006,7 @@
     }
     .founders-header .section-label { color: var(--green-light); }
     .founders-header h2 {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 400;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 400;
       font-size: clamp(2rem, 3.2vw, 3.2rem); line-height: 1.05; letter-spacing: -0.02em;
       color: var(--cream);
     }
@@ -1096,7 +1029,7 @@
     .founder-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(15%); }
     .founder-photo .photo-ph { height: 100%; min-height: 0; }
     .founder-name {
-      font-family: 'Fraunces', Georgia, serif; font-weight: 500;
+      font-family: 'Instrument Serif', Georgia, serif; font-weight: 500;
       font-size: 1.2rem; color: var(--cream); margin-bottom: 0.25rem;
     }
     .founder-role {
@@ -1148,7 +1081,7 @@
       }
     }
     .story-final-cta h2 {
-      font-family: 'Fraunces', Georgia, serif;
+      font-family: 'Instrument Serif', Georgia, serif;
       font-weight: 400;
       font-size: clamp(2rem, 4vw, 3.25rem);
       line-height: 1.04;
@@ -1169,243 +1102,117 @@
     }
 
     /* ========= CONTACT ========= */
-    .contact-page {
-      min-height: 100svh;
-      padding-top: var(--nav-h);
-      background:
-        linear-gradient(180deg, rgba(247,245,240,0.78) 0%, rgba(235,235,232,0) 48rem),
-        var(--bg);
-    }
-    .contact-hero {
-      max-width: 1240px;
+    .contact-grid-section {
+      padding: 2rem max(1.5rem, 5vw) 5rem;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: clamp(3.25rem, 7vw, 6rem) 6vw 5rem;
-    }
-    .contact-top {
-      display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-      gap: clamp(2.5rem, 6vw, 6rem);
-      align-items: end;
-      padding-bottom: clamp(2.25rem, 5vw, 4rem);
-      border-bottom: 1px solid var(--line);
-    }
-    .contact-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-size: 0.7rem;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--green);
-    }
-    .contact-kicker::before {
-      content: "";
-      width: 34px;
-      height: 1px;
-      background: currentColor;
-    }
-    .contact-hero h1 {
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 400;
-      font-variation-settings: "opsz" 144, "SOFT" 30;
-      font-size: clamp(3.6rem, 8.5vw, 9rem);
-      line-height: 0.93;
-      letter-spacing: -0.035em;
-      margin: 1.2rem 0 1.4rem;
-      max-width: 9ch;
-    }
-    .contact-hero h1 em { font-style: italic; color: var(--green); }
-    .contact-lead {
-      max-width: 42ch;
-      font-size: clamp(1rem, 1.2vw, 1.16rem);
-      line-height: 1.7;
-      color: var(--ink-soft);
-    }
-    .contact-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 2rem;
-    }
-    .contact-primary {
-      position: relative;
-      overflow: hidden;
-      min-height: 360px;
-      background: var(--bg-dark);
-      color: var(--cream);
-      padding: clamp(1.6rem, 3vw, 2.4rem);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 8px;
-    }
-    .contact-primary::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(145deg, rgba(61,90,61,0.92), rgba(13,13,13,0.88)),
-        url("caesar-schoorl.jpg") center 20% / cover;
-      opacity: 0.92;
-    }
-    .contact-primary > * { position: relative; z-index: 1; }
-    .contact-status {
-      width: max-content;
-      max-width: 100%;
-      padding: 0.5rem 0.75rem;
-      border: 1px solid rgba(247,245,240,0.28);
-      border-radius: 999px;
-      font-size: 0.66rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(247,245,240,0.84);
-      background: rgba(13,13,13,0.24);
-      backdrop-filter: blur(12px);
-    }
-    .contact-card-title {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: clamp(1.65rem, 2.5vw, 2.5rem);
-      line-height: 1.05;
-      letter-spacing: -0.02em;
-      max-width: 11ch;
-    }
-    .contact-card-text {
-      margin-top: 0.9rem;
-      max-width: 28ch;
-      color: rgba(247,245,240,0.78);
-      line-height: 1.6;
-      font-size: 0.95rem;
     }
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-      gap: clamp(2.25rem, 5vw, 5rem);
-      padding-top: clamp(2.25rem, 5vw, 4rem);
-    }
-    .contact-section-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
-      margin-bottom: 1.35rem;
-    }
-    .contact-section-head .section-label { margin-bottom: 0; }
-    .contact-note {
-      font-size: 0.82rem;
-      color: var(--ink-soft);
-      line-height: 1.55;
-      max-width: 26ch;
-      text-align: right;
-    }
-    .contact-rows { list-style: none; border-top: 1px solid var(--line); }
-    .contact-row {
-      display: grid;
-      grid-template-columns: 4.75rem 1fr;
-      gap: 1.25rem;
-      padding: 1.2rem 0;
-      border-bottom: 1px solid var(--line);
-      align-items: baseline;
-    }
-    .cr-label {
-      font-size: 0.66rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      padding-top: 2px;
-    }
-    .cr-value {
-      min-width: 0;
-      font-size: clamp(1rem, 1.25vw, 1.22rem);
-      font-weight: 500;
-      color: var(--ink);
-      line-height: 1.35;
-      overflow-wrap: anywhere;
-    }
-    .cr-value a { color: var(--green); transition: opacity 0.2s; }
-    .cr-value a:hover { opacity: 0.65; }
-    .founder-list {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1px;
-      background: var(--line);
+      grid-template-columns: repeat(3, 1fr);
       border: 1px solid var(--line);
     }
-    .c-founder {
-      min-width: 0;
-      background: var(--bg);
-      padding: 1.15rem;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
+    .contact-grid-col {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--line);
+    }
+    .contact-grid-col:last-child { border-right: none; }
+    .contact-grid-head {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(61,90,61,0.03);
+    }
+    .contact-grid-icon {
+      width: 17px; height: 17px;
+      color: var(--green);
+      flex-shrink: 0;
+    }
+    .contact-grid-head-label {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+    .contact-grid-body {
+      flex: 1;
+      padding: 1.75rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
       gap: 1rem;
     }
-    .c-avatar {
-      aspect-ratio: 4 / 5;
-      width: 100%;
-      overflow: hidden;
-      background: #1a2e1a;
-      border-radius: 6px;
+    .contact-grid-value {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+      line-height: 1.35;
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
     }
-    .c-avatar img { width: 100%; height: 100%; object-fit: cover; }
-    .c-avatar .photo-ph {
-      height: 100%;
-      display: grid;
-      place-items: center;
-      color: rgba(247,245,240,0.72);
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: clamp(2.1rem, 4vw, 3.6rem);
-      background: linear-gradient(145deg, #203620, #0f1c0f);
+    a.contact-grid-value:hover { color: var(--green); }
+    .contact-grid-value-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
     }
-    .c-name {
-      font-family: 'Fraunces', Georgia, serif;
-      font-weight: 500;
-      font-size: clamp(1.05rem, 1.4vw, 1.25rem);
-      line-height: 1.15;
-      margin-bottom: 0.35rem;
+    .contact-grid-body .btn {
+      align-self: flex-start;
+      padding: 0.55rem 1.15rem;
+      font-size: 0.82rem;
     }
-    .c-role {
-      font-size: 0.68rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
+    .contact-grid-foot {
+      padding: 1rem 1.5rem;
       color: var(--ink-soft);
-      line-height: 1.45;
+      font-size: 0.84rem;
+      line-height: 1.55;
     }
-    .c-li {
-      width: max-content;
-      max-width: 100%;
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--green);
-      border-bottom: 1px solid rgba(61,90,61,0.3);
-      padding-bottom: 2px;
-      transition: border-color 0.2s;
-    }
-    .c-li:hover { border-color: var(--green); }
-
-    /* DARK ROUTE STRIP */
-    .route-strip { background: var(--bg-dark); padding: 5rem 6vw; margin-top: 5rem; }
-    .route-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between; gap: 4rem;
-    }
-    .route-text .section-label { color: var(--green-light); }
-    .route-text blockquote {
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
-      font-size: clamp(1.3rem, 2vw, 2rem); line-height: 1.45;
-      color: rgba(247,245,240,0.78); max-width: 34ch; margin-top: 1rem;
-    }
-    .route-svg { flex-shrink: 0; width: 320px; }
-
-    /* SIGNOFF op contact */
-    .closer-signoff {
-      max-width: 1200px; margin: 0 auto;
-      padding: 4rem 6vw;
-      font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 300;
-      font-size: clamp(1.05rem, 1.3vw, 1.3rem); color: var(--ink-soft); line-height: 1.5;
+    .contact-online-strip {
       border-top: 1px solid var(--line);
+      padding: 3rem max(1.5rem, 5vw) 5rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    .closer-signoff strong { font-style: normal; font-weight: 500; color: var(--ink); }
+    .contact-online-strip .section-label { margin-bottom: 1.5rem; }
+    .contact-copy-btn {
+      width: 32px; height: 32px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 1px solid transparent; border-radius: 999px;
+      background: transparent; color: var(--ink-soft);
+      cursor: pointer; flex-shrink: 0;
+      transition: color 0.2s, background 0.2s, border-color 0.2s;
+    }
+    .contact-copy-btn:hover {
+      color: var(--green);
+      background: rgba(61,90,61,0.06);
+      border-color: rgba(61,90,61,0.14);
+    }
+    .contact-copy-btn svg { width: 15px; height: 15px; }
+    .contact-copy-btn .check-icon { display: none; color: #2f7d46; }
+    .contact-copy-btn.copied .copy-icon { display: none; }
+    .contact-copy-btn.copied .check-icon { display: block; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 0.85rem; }
+    .contact-social {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      min-height: 42px; padding: 0.7rem 1rem;
+      border: 1px solid var(--line); border-radius: 999px;
+      background: rgba(247,245,240,0.7); color: var(--ink);
+      text-decoration: none; font-size: 0.82rem; font-weight: 500;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .contact-social:hover {
+      color: var(--green);
+      border-color: rgba(61,90,61,0.32);
+      background: rgba(61,90,61,0.06);
+    }
+    .contact-social svg { width: 17px; height: 17px; }
+    @media (max-width: 680px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .contact-grid-col { border-right: none; border-bottom: 1px solid var(--line); }
+      .contact-grid-col:last-child { border-bottom: none; }
+    }
 
     /* FOOTER */
     .site-footer {
@@ -1414,7 +1221,7 @@
     }
     .footer-logo {
       display: flex; align-items: center;
-      font-family: 'Fraunces', Georgia, serif;
+      font-family: 'Instrument Serif', Georgia, serif;
       font-weight: 500; font-size: 1.25rem; letter-spacing: 0.005em;
     }
     .footer-right { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
@@ -1427,24 +1234,6 @@
       width: 28px; height: 28px; flex-shrink: 0;
       display: inline-block;
     }
-    .for-mind-bar {
-      max-width: 1200px; margin: 0 auto;
-      padding: 0 6vw 1rem;
-    }
-    .for-mind-inner {
-      display: flex; align-items: center; gap: 1.5rem;
-      padding: 1.75rem 0;
-      border-top: 1px solid var(--line);
-    }
-    .for-mind-label {
-      font-size: 0.7rem; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--ink-soft);
-      flex-shrink: 0;
-    }
-    .for-mind-logo {
-      height: 56px; width: auto; display: block;
-    }
-
     /* RESPONSIVE */
     @media (max-width: 960px) {
       .intro-strip { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 6vw; }
@@ -1454,26 +1243,18 @@
       .plan-header { grid-template-columns: 1fr; gap: 1.5rem; }
       .plan-row, .return-row { grid-template-columns: 40px 1fr; }
       .plan-row .detail, .return-row .detail { grid-column: 2; text-align: left; }
-      .tiers-grid { grid-template-columns: 1fr; }
-      .tier { border-right: none; border-bottom: 1px solid var(--line); padding: 1.5rem 0 !important; }
-      .tier:last-child { border-bottom: none; }
-      .tier-main { background: rgba(168, 201, 140, 0.10); padding: 1.5rem 1rem !important; }
       .founders-grid { grid-template-columns: 1fr; }
       .founder-card { padding: 2rem 0; border-right: none; border-bottom: 1px solid var(--line-dark); }
       .founder-card:not(:first-child) { padding-left: 0; }
-      .contact-top { grid-template-columns: 1fr; align-items: start; }
-      .contact-primary { min-height: 300px; }
-      .contact-grid { grid-template-columns: 1fr; gap: 3.5rem; }
-      .tiers-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
-      .tiers-header p { text-align: left; }
+      .contact-hero { grid-template-columns: 1fr; align-items: start; }
+      .contact-methods { grid-template-columns: 1fr; }
+      .contact-box { min-height: 0; border-right: none; border-bottom: 1px solid var(--line); }
+      .contact-box:last-child { border-bottom: none; }
       .hero-foot { flex-direction: column; gap: 1.5rem; }
       .hero-meta { text-align: left; }
-      .route-inner { flex-direction: column; gap: 2rem; }
-      .route-svg { display: none; }
     }
     @media (max-width: 760px) {
-      .for-mind-inner { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem 0; }
-      .for-mind-logo { height: 48px; }
+      .sponsor-cta-section { padding: 5rem max(1.25rem, 5vw); }
       .story-chapter { padding: 3.5rem 0; gap: 2rem; }
       .story-pullquote { padding: 4rem max(1.25rem, 5vw); }
       .home-story-tease { padding: 5rem max(1.25rem, 5vw); }
@@ -1482,13 +1263,6 @@
       .home-journey-stats { gap: 1.5rem; }
       .story-closing { padding: 4rem max(1.25rem, 5vw); }
       .philosophy-section { padding: 5rem 0; }
-      .founder-list { grid-template-columns: 1fr; }
-      .c-founder {
-        grid-template-columns: 76px 1fr auto;
-        grid-template-rows: auto;
-        align-items: center;
-      }
-      .c-avatar { aspect-ratio: 1; border-radius: 50%; }
     }
     @media (max-width: 600px) {
       .pg-item:nth-child(1) { grid-column: span 12; height: 240px; }
@@ -1497,14 +1271,14 @@
       .nav-links { gap: 1.5rem; }
       .ch-visual { aspect-ratio: 3/2; }
       .ch-visual.ch-visual-mind { aspect-ratio: 3/2; }
+      .contact-shell { border-left: none; border-right: none; }
       .contact-hero { padding-inline: max(1.25rem, 5vw); }
       .contact-actions { flex-direction: column; align-items: stretch; }
       .contact-actions .btn { justify-content: center; }
-      .contact-section-head { display: block; }
-      .contact-note { margin-top: 0.55rem; text-align: left; }
-      .contact-row { grid-template-columns: 1fr; gap: 0.35rem; }
-      .c-founder { grid-template-columns: 64px 1fr; }
-      .c-li { grid-column: 2; }
+      .contact-status-meta { grid-template-columns: 1fr; gap: 0.55rem; }
+      .contact-box-body { align-items: flex-start; }
+      .contact-final { flex-direction: column; align-items: flex-start; }
+      .contact-final .btn { width: 100%; justify-content: center; }
     }
   </style>
 </head>
@@ -1684,7 +1458,7 @@
     <!-- HOME — closing CTA -->
     <div class="home-closing">
       <h2 data-i18n="home.closing.h">Loop je<br><em>mee?</em></h2>
-      <p data-i18n="home.closing.p">Of je nu hoofdsponsor wordt, hardware levert, of gewoon het verhaal volgt — er is plek.</p>
+      <p data-i18n="home.closing.p">Of je nu partner wordt, hardware levert, of gewoon het verhaal volgt — er is plek.</p>
       <div class="actions">
         <button class="btn" data-i18n="home.closing.cta1" onclick="showPage('sponsoring')" type="button">Word partner →</button>
         <button class="btn btn-outline" data-i18n="home.closing.cta2" onclick="showPage('verhaal')" type="button">Ons verhaal →</button>
@@ -1870,23 +1644,23 @@
             <div class="founder-photo"><img src="caesar-schoorl.jpg" alt="Caesar Schoorl" loading="lazy" /></div>
             <div class="founder-name">Caesar Schoorl</div>
             <div class="founder-role" data-i18n="founders.role1">AI-founder · Amsterdam</div>
-            <p class="founder-bio" data-i18n="founders.bio1">Vul hier de korte bio van Caesar in — wat hij doet, wat hem drijft, en waarom hij meeloopt op de Camino.</p>
+            <p class="founder-bio" data-i18n="founders.bio1">Caesar bouwt AI-producten en brengt het verhaal, de partners en de energie bij elkaar. Op de Camino wil hij laten zien dat technologie menselijker wordt als je het buiten het kantoor brengt.</p>
             <a href="https://www.linkedin.com/in/caesar-schoorl-ai/" target="_blank" rel="noopener" class="founder-li">LinkedIn →</a>
           </div>
 
           <div class="founder-card">
             <div class="founder-photo"><img src="stijn-smit.jpg" alt="Stijn Smit" loading="lazy" /></div>
             <div class="founder-name" data-i18n="founders.name2">Stijn Smit</div>
-            <div class="founder-role" data-i18n="founders.role2">Rol · Amsterdam</div>
-            <p class="founder-bio" data-i18n="founders.bio2">Korte bio — achtergrond, expertise, motivatie om mee te lopen.</p>
+            <div class="founder-role" data-i18n="founders.role2">AI-founder · Amsterdam</div>
+            <p class="founder-bio" data-i18n="founders.bio2">Stijn werkt op het snijvlak van AI, product en storytelling. Hij loopt mee om te bouwen aan een tool die concreet helpt, en om werken weer minder scherm en meer aandacht te maken.</p>
             <a href="https://www.linkedin.com/in/stijn-smit-ai/" target="_blank" rel="noopener" class="founder-li">LinkedIn →</a>
           </div>
 
           <div class="founder-card">
-            <div class="founder-photo"><div class="photo-ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div></div>
+            <div class="founder-photo"><img src="max-helmantel.webp" alt="Max Helmantel" loading="lazy" /></div>
             <div class="founder-name" data-i18n="founders.name3">Max Helmantel</div>
-            <div class="founder-role" data-i18n="founders.role3">Rol · Amsterdam</div>
-            <p class="founder-bio" data-i18n="founders.bio3">Korte bio — achtergrond, expertise, motivatie om mee te lopen.</p>
+            <div class="founder-role" data-i18n="founders.role3">AI-founder · Amsterdam</div>
+            <p class="founder-bio" data-i18n="founders.bio3">Max brengt technische scherpte en ondernemersenergie mee in het team. Zijn persoonlijke bio en foto volgen nog, maar zijn rol is helder: meebouwen aan de tool die straks naar MIND gaat.</p>
             <a href="https://www.linkedin.com/in/maxhelmantel/" target="_blank" rel="noopener" class="founder-li">LinkedIn →</a>
           </div>
 
@@ -1918,22 +1692,15 @@
   <div class="page" id="page-sponsoring">
 
     <section class="story-hero">
-      <span class="pill" data-i18n="sponsor.pill">Sponsoring</span>
+      <span class="pill" data-i18n="sponsor.pill">Partners</span>
       <h1 data-i18n="sponsor.h1">Word jij onze<br><em>partner in dit verhaal?</em></h1>
       <div class="story-hero-foot">
-        <p data-i18n="sponsor.intro1">Geen logo op een shirt. Cash of in natura — hoe meer partners, hoe groter de impact. Hieronder wat we doen, wat je ervoor terugkrijgt, en in welke vorm partnership past.</p>
-        <p data-i18n="sponsor.intro2">Plekken zijn beperkt: één hoofdsponsor, een handvol co-sponsors, en ruimte voor in-natura partners die meebouwen met hardware, gear of expertise.</p>
+        <p data-i18n="sponsor.intro">We zoeken partners die dit verhaal groter willen maken — met budget, hardware, expertise of bereik. De AI-tool die we bouwen gaat gratis naar stichting MIND. Geen standaard pakket, we kijken samen wat logisch is.</p>
+        <p data-i18n="sponsor.mind">Niet één gesprek om een pakket te verkopen — maar om te horen waar jij staat. Of je nu hardware inbrengt, je team naar buiten wil of gewoon het verhaal wil dragen.</p>
       </div>
     </section>
 
-    <div class="for-mind-bar">
-      <div class="for-mind-inner">
-        <span class="for-mind-label" data-i18n="formind.label">We bouwen dit voor</span>
-        <img src="mind-logo.webp" alt="Stichting MIND" class="for-mind-logo" loading="lazy" />
-      </div>
-    </div>
-
-    <!-- HET PLAN — uit pitchdeck slide 3 -->
+    <!-- HET PLAN -->
     <section class="plan-section">
       <div class="plan-header">
         <div>
@@ -1961,105 +1728,50 @@
       </div>
     </section>
 
-    <!-- WAT KRIJG JE TERUG — uit pitchdeck slide 7 -->
+    <!-- PULL-QUOTE — editorial break -->
+    <div class="story-pullquote story-pullquote-dark">
+      <blockquote data-i18n="sponsor.quote">We zoeken geen logo op een shirt —<br>we zoeken <em>een partner in het verhaal.</em></blockquote>
+      <p class="cite" data-i18n="sponsor.quote.cite">Back to Being · Zomer 2026</p>
+    </div>
+
+    <!-- WAAROM PARTNER WORDEN — vereenvoudigd, 3 rijen -->
     <section class="return-section">
       <div class="return-inner">
         <div class="return-header">
-          <div class="section-label" data-i18n="return.label">Wat krijg je terug</div>
-          <h2 data-i18n="return.h">Geen logo op een shirt.<br><em>Vier dingen</em> die ergens om gaan.</h2>
-          <p data-i18n="return.body">Eentje die je nergens anders krijgt: je team mee naar buiten. De rest is content, bereik en een verhaal dat blijft hangen.</p>
+          <div class="section-label" data-i18n="return.label">Waarom partner worden</div>
+          <h2 data-i18n="return.h">Een verhaal dat mensen<br><em>willen volgen.</em></h2>
+          <p data-i18n="return.body">Wat je precies terugkrijgt bespreken we samen. Wat we je alvast kunnen vertellen:</p>
         </div>
         <div class="return-rows">
           <div class="return-row">
             <span class="num">01</span>
-            <span class="title"  data-i18n="return.row1.t">Het kantoor naar buiten voor jouw team <span class="title-tag" data-i18n="return.row1.tag">uniek</span></span>
-            <span class="detail" data-i18n="return.row1.d">Walking workshop + AI session bij jullie. Wij brengen Back to Being naar je bedrijf.</span>
+            <span class="title" data-i18n="return.row1.t">Mini-docu met jouw naam <span class="title-tag">zichtbaar</span></span>
+            <span class="detail" data-i18n="return.row1.d">Distributie via TikTok, Instagram en YouTube. Jouw merk verbonden aan een verhaal dat blijft hangen.</span>
           </div>
           <div class="return-row">
             <span class="num">02</span>
-            <span class="title"  data-i18n="return.row2.t">Mini-docu met merkvermelding</span>
-            <span class="detail" data-i18n="return.row2.d">Distributie via TikTok, Instagram en YouTube. Prominent verbonden aan een verhaal dat blijft hangen.</span>
+            <span class="title" data-i18n="return.row2.t">Het kantoor naar buiten <span class="title-tag">uniek</span></span>
+            <span class="detail" data-i18n="return.row2.d">Walking workshop + AI session bij jouw team. Wij brengen Back to Being naar je bedrijf.</span>
           </div>
           <div class="return-row">
             <span class="num">03</span>
-            <span class="title"  data-i18n="return.row3.t">Earned media</span>
-            <span class="detail" data-i18n="return.row3.d">We pitchen het verhaal actief richting podcasts, kranten en eigen netwerk. Jouw merk reist mee.</span>
-          </div>
-          <div class="return-row">
-            <span class="num">04</span>
-            <span class="title"  data-i18n="return.row4.t">Content voor jouw kanalen</span>
-            <span class="detail" data-i18n="return.row4.d">Beelden, quotes en updates, klaar om te delen op je eigen socials.</span>
+            <span class="title" data-i18n="return.row3.t">Maatwerk per partner <span class="title-tag">persoonlijk</span></span>
+            <span class="detail" data-i18n="return.row3.d">Hardware, AI-credits, earned media of iets heel anders — we kijken in één gesprek wat voor jou het meeste waarde heeft.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SPONSORTIERS — uit pitchdeck slide 6, ZONDER bedragen -->
-    <section class="tiers-section">
-      <div class="tiers-header">
-        <h2 data-i18n="tiers.h">Drie manieren<br>om <em>mee te lopen.</em></h2>
-        <p data-i18n="tiers.body">Cash of in natura. Hoe meer partners, hoe groter de impact.</p>
-      </div>
-
-      <div class="tiers-grid">
-        <div class="tier tier-main">
-          <span class="tier-featured" data-i18n="tier1.featured">Meest impact</span>
-          <span class="tier-tag"      data-i18n="tier1.tag">Hoofdsponsor</span>
-          <div class="tier-amount"    data-i18n="tier1.amount">Volledig</div>
-          <div class="tier-spots"     data-i18n="tier1.spots">Volledige partnership</div>
-          <ul class="tier-perks">
-            <li data-i18n="tier1.p1">Naam in titel mini-docu ("presented by")</li>
-            <li data-i18n="tier1.p2">Walking workshop + AI session bij jouw team</li>
-            <li data-i18n="tier1.p3">Custom content pakket: beelden, quotes, edits</li>
-            <li data-i18n="tier1.p4">Merkvermelding in earned media campagne</li>
-            <li data-i18n="tier1.p5">Spreker bij debrief event na de Camino</li>
-          </ul>
+    <!-- PARTNER CTA — dark, enthousiast, cal.eu -->
+    <section class="sponsor-cta-section">
+      <div class="sponsor-cta-inner">
+        <div class="section-label sponsor-cta-label" data-i18n="sponsor.cta.label">Plekken zijn beperkt</div>
+        <h2 data-i18n="sponsor.cta.h">Eén gesprek is<br><em>genoeg.</em></h2>
+        <p data-i18n="sponsor.cta.body">Plan 20 minuten en we weten samen of dit past — en hoe het eruit ziet als het dat doet.</p>
+        <div class="sponsor-cta-actions">
+          <a class="btn sponsor-cta-btn" href="https://cal.com/caesar-schoorl/back-to-being" data-i18n="sponsor.cta.btn1" target="_blank" rel="noopener">Plan een gesprek →</a>
+          <a class="btn btn-outline sponsor-cta-outline" href="mailto:Caesar.schoorl@gmail.com?subject=Back%20to%20Being%3A%20partnerschap&body=Hi%2C%0A%0AIk%20wil%20graag%20een%20kort%20gesprek%20over%20een%20samenwerking.%0A%0AHartelijke%20groet" data-i18n="sponsor.cta.btn2">Mail ons →</a>
         </div>
-
-        <div class="tier">
-          <span class="tier-tag"   data-i18n="tier2.tag">Co-sponsor</span>
-          <div class="tier-amount" data-i18n="tier2.amount">Verbonden</div>
-          <div class="tier-spots"  data-i18n="tier2.spots">Aan het verhaal verbonden</div>
-          <ul class="tier-perks">
-            <li data-i18n="tier2.p1">Logo en vermelding in mini-docu</li>
-            <li data-i18n="tier2.p2">Plek bij gezamenlijke walking workshop</li>
-            <li data-i18n="tier2.p3">Gedeeld content pakket voor eigen kanalen</li>
-            <li data-i18n="tier2.p4">Co-vermelding in earned media</li>
-          </ul>
-        </div>
-
-        <div class="tier">
-          <span class="tier-tag"   data-i18n="tier3.tag">Supporter</span>
-          <div class="tier-amount" data-i18n="tier3.amount">In natura</div>
-          <div class="tier-spots"  data-i18n="tier3.spots">Goederen of diensten</div>
-          <div class="tier-examples" data-i18n="tier3.examples">
-            <strong>Denk aan</strong>
-            Hardware (<em>MacBooks, smart glasses</em>), AI-credits, gear, verblijf. <em>Substantiële bijdragen krijgen co- of hoofdsponsor perks.</em>
-          </div>
-          <ul class="tier-perks">
-            <li data-i18n="tier3.p1">Product zichtbaar in beeld waar passend</li>
-            <li data-i18n="tier3.p2">Vermelding in aftiteling mini-docu</li>
-            <li data-i18n="tier3.p3">Eerste toegang tot docu en updates</li>
-            <li data-i18n="tier3.p4">Vermelding in updates en social content</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Wish-sponsors, eerlijk gelabeld als gesprekken -->
-      <div class="partners-strip">
-        <div class="partners-label" data-i18n="partners.label">In gesprek met</div>
-        <div class="partners-names">
-          <span>Polarsteps</span>
-          <span class="partner-sep">·</span>
-          <span>Coolblue</span>
-          <span class="partner-sep">·</span>
-          <span>House of Founders</span>
-        </div>
-      </div>
-
-      <div class="tiers-cta">
-        <p data-i18n="tiers.cta.text">Plekken zijn beperkt. Eén hoofdsponsor, een handvol co-sponsors, ruimte voor in-natura partners.</p>
-        <button class="btn" data-i18n="tiers.cta.btn" onclick="showPage('contact')" type="button">Word partner →</button>
       </div>
     </section>
 
@@ -2071,129 +1783,83 @@
 
   <!-- ======== PAGE: CONTACT ======== -->
   <div class="page" id="page-contact">
-    <div class="contact-page">
-
-      <section class="contact-hero">
-        <div class="contact-top">
-          <div>
-            <span class="contact-kicker" data-i18n="contact.pill">Contact</span>
-            <h1 data-i18n="contact.h1">Laten we<br><em>beginnen.</em></h1>
-            <p class="contact-lead" data-i18n="contact.lead">Een partnership hoeft geen lang traject te zijn. Stuur ons een mail of bel Caesar direct; dan plannen we een korte check om te zien waar jullie kunnen instappen.</p>
-            <div class="contact-actions">
-              <a class="btn" id="mailtoBtn" data-i18n="contact.btn" href="mailto:Caesar.schoorl@gmail.com?subject=Back%20to%20Being%3A%2010%20min%20koffie&body=Hi%2C%0A%0AIk%20wil%20graag%20een%20kort%20gesprek%20over%20een%20partnerschap.%0A%0AHartelijke%20groet">Mail ons direct &rarr;</a>
-              <a class="btn btn-outline" data-i18n="contact.call" href="tel:+31683032377">Bel Caesar</a>
-            </div>
-          </div>
-
-          <aside class="contact-primary" aria-label="Korte contactintro">
-            <div class="contact-status" data-i18n="contact.status">Zomer 2026 / Camino Portugues</div>
-            <div>
-              <div class="contact-card-title" data-i18n="contact.card.title">10 minuten is genoeg.</div>
-              <p class="contact-card-text" data-i18n="contact.card.text">We vertellen wat we bouwen, wat MIND eraan heeft en welke partnerrol logisch is voor jullie merk.</p>
-            </div>
-          </aside>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-left">
-            <div class="contact-section-head">
-              <div class="section-label" data-i18n="contact.details.label">Direct contact</div>
-              <p class="contact-note" data-i18n="contact.details.note">Meestal reageren we dezelfde werkdag.</p>
-            </div>
-            <ul class="contact-rows">
-              <li class="contact-row">
-                <span class="cr-label" data-i18n="contact.label.mail">Mail</span>
-                <span class="cr-value"><a href="mailto:Caesar.schoorl@gmail.com">Caesar.schoorl@gmail.com</a></span>
-              </li>
-              <li class="contact-row">
-                <span class="cr-label" data-i18n="contact.label.tel">Tel</span>
-                <span class="cr-value"><a href="tel:+31683032377">+31 6 83032377</a></span>
-              </li>
-              <li class="contact-row">
-                <span class="cr-label" data-i18n="contact.label.web">Web</span>
-                <span class="cr-value">backtobeing.tech</span>
-              </li>
-              <li class="contact-row">
-                <span class="cr-label" data-i18n="contact.label.goal">Doel</span>
-                <span class="cr-value cr-value-with-icon">
-                  <img src="mind-logo.webp" alt="" class="mind-icon" aria-hidden="true" loading="lazy" />
-                  <span data-i18n="contact.value.goal">Voor stichting MIND</span>
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="contact-right">
-            <div class="contact-section-head">
-              <div class="section-label" data-i18n="contact.founders.label">De founders</div>
-              <p class="contact-note" data-i18n="contact.founders.note">Drie AI-founders onderweg naar Santiago.</p>
-            </div>
-
-            <div class="founder-list">
-              <div class="c-founder">
-                <div class="c-avatar"><img src="caesar-schoorl.jpg" alt="Caesar Schoorl" loading="lazy" /></div>
-                <div>
-                  <div class="c-name">Caesar Schoorl</div>
-                  <div class="c-role" data-i18n="contact.role1">AI-founder</div>
-                </div>
-                <a href="https://www.linkedin.com/in/caesar-schoorl-ai/" target="_blank" rel="noopener" class="c-li">LinkedIn &rarr;</a>
-              </div>
-
-              <div class="c-founder">
-                <div class="c-avatar"><img src="stijn-smit.jpg" alt="Stijn Smit" loading="lazy" /></div>
-                <div>
-                  <div class="c-name" data-i18n="contact.name2">Stijn Smit</div>
-                  <div class="c-role" data-i18n="contact.role2">AI-founder</div>
-                </div>
-                <a href="https://www.linkedin.com/in/stijn-smit-ai/" target="_blank" rel="noopener" class="c-li">LinkedIn &rarr;</a>
-              </div>
-
-              <div class="c-founder">
-                <div class="c-avatar"><div class="photo-ph" aria-hidden="true">M</div></div>
-                <div>
-                  <div class="c-name" data-i18n="contact.name3">Max Helmantel</div>
-                  <div class="c-role" data-i18n="contact.role3">AI-founder</div>
-                </div>
-                <a href="https://www.linkedin.com/in/maxhelmantel/" target="_blank" rel="noopener" class="c-li">LinkedIn &rarr;</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <div class="route-strip">
-        <div class="route-inner">
-          <div class="route-text">
-            <div class="section-label" data-i18n="route.label">De route</div>
-            <blockquote data-i18n="route.quote">
-              "Wij laten zien dat tech ons mensélijker kan maken — als je 'm op de goede manier inzet."
-            </blockquote>
-          </div>
-          <svg class="route-svg" viewBox="0 0 320 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <line x1="16" y1="94" x2="304" y2="94" stroke="rgba(247,245,240,0.08)" stroke-width="1"/>
-            <path d="M16 94 C 50 85, 72 65, 110 52 C 148 39, 170 68, 210 48 C 250 28, 272 40, 304 16"
-              stroke="#3d5a3d" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16"  cy="94" r="4.5" fill="#a8c98c"/>
-            <circle cx="110" cy="52" r="3"   fill="rgba(168,201,140,0.4)"/>
-            <circle cx="210" cy="48" r="3"   fill="rgba(168,201,140,0.4)"/>
-            <circle cx="304" cy="16" r="4.5" fill="#a8c98c"/>
-            <text x="16"  y="108" fill="rgba(247,245,240,0.38)" font-family="Inter,sans-serif" font-size="8.5" letter-spacing="1.5">TUI</text>
-            <text x="272" y="11"  fill="rgba(247,245,240,0.38)" font-family="Inter,sans-serif" font-size="8.5" letter-spacing="1.5">SANTIAGO</text>
-            <text x="144" y="108" fill="rgba(247,245,240,0.25)" font-family="Inter,sans-serif" font-size="8" letter-spacing="1" data-i18n="route.map">115 KM · 6 DAGEN</text>
-          </svg>
-        </div>
+    <section class="story-hero">
+      <span class="pill" data-i18n="contact.pill">Contact</span>
+      <h1 data-i18n="contact.h1">Laten we kijken<br><em>of dit past.</em></h1>
+      <div class="story-hero-foot">
+        <p data-i18n="contact.lead">Wil je partner worden, meebouwen of even sparren? Plan een gesprek, stuur een mail of bel Caesar direct.</p>
+        <p data-i18n="contact.note">We reageren binnen een dag. Geen verkooppraatje — gewoon een gesprek.</p>
       </div>
+    </section>
 
-      <p class="closer-signoff" data-i18n="closer">
-        <strong>De wereld als ons kantoor</strong> — we zien je onderweg. Zomer 2026.
-      </p>
+    <section class="contact-grid-section" aria-label="Contactgegevens">
+      <div class="contact-grid">
 
-      <footer class="site-footer">
-        <div class="footer-logo">Back to Being</div>
-        <div class="footer-right" data-i18n="footer.right">backtobeing.tech &nbsp;·&nbsp; Zomer 2026</div>
-      </footer>
+        <div class="contact-grid-col">
+          <div class="contact-grid-head">
+            <svg class="contact-grid-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <span class="contact-grid-head-label" data-i18n="contact.cal.head">Gesprek</span>
+          </div>
+          <div class="contact-grid-body">
+            <span class="contact-grid-value" data-i18n="contact.cal.value">20 minuten.<br><em>Genoeg om te weten of het past.</em></span>
+            <a class="btn" href="https://cal.com/caesar-schoorl/back-to-being" target="_blank" rel="noopener" data-i18n="contact.cal.btn">Plan een gesprek →</a>
+          </div>
+          <div class="contact-grid-foot" data-i18n="contact.cal.desc">Plan direct via cal.eu. We kijken samen of en hoe het past.</div>
+        </div>
+
+        <div class="contact-grid-col">
+          <div class="contact-grid-head">
+            <svg class="contact-grid-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="contact-grid-head-label" data-i18n="contact.email.head">Mail</span>
+          </div>
+          <div class="contact-grid-body">
+            <div class="contact-grid-value-row">
+              <a class="contact-grid-value" href="mailto:Caesar.schoorl@gmail.com">Caesar.schoorl@gmail.com</a>
+              <button class="contact-copy-btn" type="button" data-copy="Caesar.schoorl@gmail.com" aria-label="Copy email">
+                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="contact-grid-foot" data-i18n="contact.email.desc">Voor partners, pers, meebouwers en iedereen die even wil sparren.</div>
+        </div>
+
+        <div class="contact-grid-col">
+          <div class="contact-grid-head">
+            <svg class="contact-grid-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.78a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="contact-grid-head-label" data-i18n="contact.office.head">Kantoor</span>
+          </div>
+          <div class="contact-grid-body">
+            <span class="contact-grid-value" data-i18n="contact.office.value">Jacob Bontiusplaats 9<br>1018 LL Amsterdam</span>
+          </div>
+          <div class="contact-grid-foot" data-i18n="contact.office.desc">Kom langs of gebruik dit als postadres.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="contact-online-strip">
+      <div class="section-label" data-i18n="contact.online.label">Vind ons online</div>
+      <div class="contact-links">
+        <a class="contact-social" href="https://www.linkedin.com/in/caesar-schoorl-ai/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.42 8.03h4.15V23H.42V8.03ZM8.1 8.03h3.98v2.05h.06c.55-1.05 1.91-2.16 3.94-2.16 4.22 0 5 2.78 5 6.39V23h-4.15v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V23H8.1V8.03Z"/></svg>
+          Caesar
+        </a>
+        <a class="contact-social" href="https://www.linkedin.com/in/stijn-smit-ai/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.42 8.03h4.15V23H.42V8.03ZM8.1 8.03h3.98v2.05h.06c.55-1.05 1.91-2.16 3.94-2.16 4.22 0 5 2.78 5 6.39V23h-4.15v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V23H8.1V8.03Z"/></svg>
+          Stijn
+        </a>
+        <a class="contact-social" href="https://www.linkedin.com/in/maxhelmantel/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.42 8.03h4.15V23H.42V8.03ZM8.1 8.03h3.98v2.05h.06c.55-1.05 1.91-2.16 3.94-2.16 4.22 0 5 2.78 5 6.39V23h-4.15v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V23H8.1V8.03Z"/></svg>
+          Max
+        </a>
+      </div>
     </div>
+
+    <footer class="site-footer">
+      <div class="footer-logo">Back to Being</div>
+      <div class="footer-right" data-i18n="footer.right">backtobeing.tech &nbsp;·&nbsp; Zomer 2026</div>
+    </footer>
   </div>
 
   <script src="https://unpkg.com/maplibre-gl@5.9.0/dist/maplibre-gl.js"></script>
@@ -2284,7 +1950,7 @@
         'home.journey.stat.end.v':   'Santiago',
         'home.journey.stat.end.l':   'finish',
         'home.closing.h':    'Loop je<br><em>mee?</em>',
-        'home.closing.p':    'Of je nu hoofdsponsor wordt, hardware levert, of gewoon het verhaal volgt — er is plek.',
+        'home.closing.p':    'Of je nu partner wordt, hardware levert, of gewoon het verhaal volgt — er is plek.',
         'home.closing.cta1': 'Word partner →',
         'home.closing.cta2': 'Ons verhaal →',
 
@@ -2309,20 +1975,26 @@
         'founders.label':   'De founders',
         'founders.h':       'De mensen achter<br><em>Back to Being.</em>',
         'founders.role1':   'AI-founder · Amsterdam',
-        'founders.bio1':    'Vul hier de korte bio van Caesar in — wat hij doet, wat hem drijft, en waarom hij meeloopt op de Camino.',
+        'founders.bio1':    'Caesar bouwt AI-producten en brengt het verhaal, de partners en de energie bij elkaar. Op de Camino wil hij laten zien dat technologie menselijker wordt als je het buiten het kantoor brengt.',
         'founders.name2':   'Stijn Smit',
-        'founders.role2':   'Rol · Amsterdam',
-        'founders.bio2':    'Korte bio — achtergrond, expertise, motivatie om mee te lopen.',
+        'founders.role2':   'AI-founder · Amsterdam',
+        'founders.bio2':    'Stijn werkt op het snijvlak van AI, product en storytelling. Hij loopt mee om te bouwen aan een tool die concreet helpt, en om werken weer minder scherm en meer aandacht te maken.',
         'founders.name3':   'Max Helmantel',
-        'founders.role3':   'Rol · Amsterdam',
-        'founders.bio3':    'Korte bio — achtergrond, expertise, motivatie om mee te lopen.',
+        'founders.role3':   'AI-founder · Amsterdam',
+        'founders.bio3':    'Max brengt technische scherpte en ondernemersenergie mee in het team. Zijn persoonlijke bio en foto volgen nog, maar zijn rol is helder: meebouwen aan de tool die straks naar MIND gaat.',
 
         // sponsor
-        'sponsor.pill':     'Sponsoring',
-        'sponsor.h1':       'Word jij onze<br><em>partner in dit verhaal?</em>',
-        'sponsor.intro1':   'Geen logo op een shirt. Cash of in natura — hoe meer partners, hoe groter de impact. Hieronder wat we doen, wat je ervoor terugkrijgt, en in welke vorm partnership past.',
-        'sponsor.intro2':   'Plekken zijn beperkt: één hoofdsponsor, een handvol co-sponsors, en ruimte voor in-natura partners die meebouwen met hardware, gear of expertise.',
-        'formind.label':    'We bouwen dit voor',
+        'sponsor.pill':          'Partners',
+        'sponsor.h1':            'Word jij onze<br><em>partner in dit verhaal?</em>',
+        'sponsor.intro':         'We zoeken partners die dit verhaal groter willen maken — met budget, hardware, expertise of bereik. De AI-tool die we bouwen gaat gratis naar stichting MIND. Geen standaard pakket, we kijken samen wat logisch is.',
+        'sponsor.mind':          'Niet één gesprek om een pakket te verkopen — maar om te horen waar jij staat. Of je nu hardware inbrengt, je team naar buiten wil of gewoon het verhaal wil dragen.',
+        'sponsor.quote':         'We zoeken geen logo op een shirt —<br>we zoeken <em>een partner in het verhaal.</em>',
+        'sponsor.quote.cite':    'Back to Being · Zomer 2026',
+        'sponsor.cta.label':     'Plekken zijn beperkt',
+        'sponsor.cta.h':         'Eén gesprek is<br><em>genoeg.</em>',
+        'sponsor.cta.body':      'Plan 20 minuten en we weten samen of dit past — en hoe het eruit ziet als het dat doet.',
+        'sponsor.cta.btn1':      'Plan een gesprek →',
+        'sponsor.cta.btn2':      'Mail ons →',
 
         // plan
         'plan.label':       'Het plan',
@@ -2336,81 +2008,34 @@
         'plan.row3.d':      'Tool gratis naar stichting MIND, plus een mini-docu.',
 
         // return
-        'return.label':     'Wat krijg je terug',
-        'return.h':         'Geen logo op een shirt.<br><em>Vier dingen</em> die ergens om gaan.',
-        'return.body':      'Eentje die je nergens anders krijgt: je team mee naar buiten. De rest is content, bereik en een verhaal dat blijft hangen.',
-        'return.row1.t':    'Het kantoor naar buiten voor jouw team <span class="title-tag">uniek</span>',
-        'return.row1.tag':  'uniek',
-        'return.row1.d':    'Walking workshop + AI session bij jullie. Wij brengen Back to Being naar je bedrijf.',
-        'return.row2.t':    'Mini-docu met merkvermelding',
-        'return.row2.d':    'Distributie via TikTok, Instagram en YouTube. Prominent verbonden aan een verhaal dat blijft hangen.',
-        'return.row3.t':    'Earned media',
-        'return.row3.d':    'We pitchen het verhaal actief richting podcasts, kranten en eigen netwerk. Jouw merk reist mee.',
-        'return.row4.t':    'Content voor jouw kanalen',
-        'return.row4.d':    'Beelden, quotes en updates, klaar om te delen op je eigen socials.',
-
-        // tiers
-        'tiers.h':          'Drie manieren<br>om <em>mee te lopen.</em>',
-        'tiers.body':       'Cash of in natura. Hoe meer partners, hoe groter de impact.',
-        'tier1.featured':   'Meest impact',
-        'tier1.tag':        'Hoofdsponsor',
-        'tier1.amount':     'Volledig',
-        'tier1.spots':      'Volledige partnership',
-        'tier1.p1':         'Naam in titel mini-docu ("presented by")',
-        'tier1.p2':         'Walking workshop + AI session bij jouw team',
-        'tier1.p3':         'Custom content pakket: beelden, quotes, edits',
-        'tier1.p4':         'Merkvermelding in earned media campagne',
-        'tier1.p5':         'Spreker bij debrief event na de Camino',
-        'tier2.tag':        'Co-sponsor',
-        'tier2.amount':     'Verbonden',
-        'tier2.spots':      'Aan het verhaal verbonden',
-        'tier2.p1':         'Logo en vermelding in mini-docu',
-        'tier2.p2':         'Plek bij gezamenlijke walking workshop',
-        'tier2.p3':         'Gedeeld content pakket voor eigen kanalen',
-        'tier2.p4':         'Co-vermelding in earned media',
-        'tier3.tag':        'Supporter',
-        'tier3.amount':     'In natura',
-        'tier3.spots':      'Goederen of diensten',
-        'tier3.examples':   '<strong>Denk aan</strong>Hardware (<em>MacBooks, smart glasses</em>), AI-credits, gear, verblijf. <em>Substantiële bijdragen krijgen co- of hoofdsponsor perks.</em>',
-        'tier3.p1':         'Product zichtbaar in beeld waar passend',
-        'tier3.p2':         'Vermelding in aftiteling mini-docu',
-        'tier3.p3':         'Eerste toegang tot docu en updates',
-        'tier3.p4':         'Vermelding in updates en social content',
-
-        'partners.label':   'In gesprek met',
-        'tiers.cta.text':   'Plekken zijn beperkt. Eén hoofdsponsor, een handvol co-sponsors, ruimte voor in-natura partners.',
-        'tiers.cta.btn':    'Word partner →',
+        'return.label':     'Waarom partner worden',
+        'return.h':         'Een verhaal dat mensen<br><em>willen volgen.</em>',
+        'return.body':      'Wat je precies terugkrijgt bespreken we samen. Wat we je alvast kunnen vertellen:',
+        'return.row1.t':    'Mini-docu met jouw naam <span class="title-tag">zichtbaar</span>',
+        'return.row1.d':    'Distributie via TikTok, Instagram en YouTube. Jouw merk verbonden aan een verhaal dat blijft hangen.',
+        'return.row2.t':    'Het kantoor naar buiten <span class="title-tag">uniek</span>',
+        'return.row2.d':    'Walking workshop + AI session bij jouw team. Wij brengen Back to Being naar je bedrijf.',
+        'return.row3.t':    'Maatwerk per partner <span class="title-tag">persoonlijk</span>',
+        'return.row3.d':    'Hardware, AI-credits, earned media of iets heel anders — we kijken in één gesprek wat voor jou het meeste waarde heeft.',
 
         // contact
         'contact.pill':         'Contact',
-        'contact.h1':           'Laten we<br><em>beginnen.</em>',
-        'contact.lead':         'Een partnership hoeft geen lang traject te zijn. Stuur ons een mail of bel Caesar direct; dan plannen we een korte check om te zien waar jullie kunnen instappen.',
-        'contact.call':         'Bel Caesar',
-        'contact.status':       'Zomer 2026 / Camino Portugues',
-        'contact.card.title':   '10 minuten is genoeg.',
-        'contact.card.text':    'We vertellen wat we bouwen, wat MIND eraan heeft en welke partnerrol logisch is voor jullie merk.',
-        'contact.details.label':'Direct contact',
-        'contact.details.note': 'Meestal reageren we dezelfde werkdag.',
-        'contact.label.mail':   'Mail',
-        'contact.label.tel':    'Tel',
-        'contact.label.web':    'Web',
-        'contact.label.goal':   'Doel',
-        'contact.value.goal':   'Voor stichting MIND',
-        'contact.btn':          'Mail ons direct &rarr;',
-        'contact.btn.href':     'mailto:Caesar.schoorl@gmail.com?subject=Back%20to%20Being%3A%2010%20min%20koffie&body=Hi%2C%0A%0AIk%20wil%20graag%20een%20kort%20gesprek%20over%20een%20partnerschap.%0A%0AHartelijke%20groet',
-        'contact.founders.label': 'De founders',
-        'contact.founders.note': 'Drie AI-founders onderweg naar Santiago.',
-        'contact.role1':        'AI-founder',
-        'contact.name2':        'Stijn Smit',
-        'contact.role2':        'AI-founder',
-        'contact.name3':        'Max Helmantel',
-        'contact.role3':        'AI-founder',
+        'contact.h1':           'Laten we kijken<br><em>of dit past.</em>',
+        'contact.lead':         'Wil je partner worden, meebouwen of even sparren? Plan een gesprek of stuur een mail.',
+        'contact.note':         'We reageren binnen een dag. Geen verkooppraatje — gewoon een gesprek.',
+        'contact.cal.head':     'Gesprek',
+        'contact.cal.value':    '20 minuten.<br><em>Genoeg om te weten of het past.</em>',
+        'contact.cal.desc':     'Plan direct via cal.eu. We kijken samen of en hoe het past.',
+        'contact.cal.btn':      'Plan een gesprek →',
+        'contact.email.head':   'Mail',
+        'contact.email.desc':   'Voor partners, pers, meebouwers en iedereen die even wil sparren.',
+        'contact.office.head':  'Kantoor',
+        'contact.office.value': 'Jacob Bontiusplaats 9<br>1018 LL Amsterdam',
+        'contact.office.desc':  'Kom langs of gebruik dit als postadres.',
+        'contact.online.label': 'Vind ons online',
 
-        // route + closer
-        'route.label':      'De route',
-        'route.quote':      '"Wij laten zien dat tech ons mensélijker kan maken — als je \'m op de goede manier inzet."',
+        // route
         'route.map':        '115 KM · 6 DAGEN',
-        'closer':           '<strong>De wereld als ons kantoor</strong> — we zien je onderweg. Zomer 2026.'
       },
 
       en: {
@@ -2493,7 +2118,7 @@
         'home.journey.stat.end.v':   'Santiago',
         'home.journey.stat.end.l':   'finish',
         'home.closing.h':    'Will you<br><em>walk with us?</em>',
-        'home.closing.p':    "Whether you become a headline sponsor, ship hardware, or just follow the story, there's a spot.",
+        'home.closing.p':    "Whether you become a partner, ship hardware, or just follow the story, there's a spot.",
         'home.closing.cta1': 'Become a partner →',
         'home.closing.cta2': 'Our story →',
 
@@ -2518,20 +2143,26 @@
         'founders.label':   'The founders',
         'founders.h':       'The people behind<br><em>Back to Being.</em>',
         'founders.role1':   'AI founder · Amsterdam',
-        'founders.bio1':    "Short bio for Caesar — what he does, what drives him, and why he's walking the Camino.",
+        'founders.bio1':    'Caesar builds AI products and brings the story, partners, and energy together. On the Camino, he wants to show that technology becomes more human when it leaves the office.',
         'founders.name2':   'Stijn Smit',
-        'founders.role2':   'Role · Amsterdam',
-        'founders.bio2':    'Short bio — background, expertise, why they joined the walk.',
+        'founders.role2':   'AI founder · Amsterdam',
+        'founders.bio2':    'Stijn works across AI, product, and storytelling. He is walking to build something useful for MIND, and to make work feel less screen-led and more intentional.',
         'founders.name3':   'Max Helmantel',
-        'founders.role3':   'Role · Amsterdam',
-        'founders.bio3':    'Short bio — background, expertise, why they joined the walk.',
+        'founders.role3':   'AI founder · Amsterdam',
+        'founders.bio3':    'Max brings technical sharpness and founder energy to the team. His personal bio and photo are still coming, but his role is clear: help build the tool that will go to MIND.',
 
         // sponsor
-        'sponsor.pill':     'Sponsorship',
-        'sponsor.h1':       'Want to be part<br>of the <em>story?</em>',
-        'sponsor.intro1':   "No logo on a shirt. Cash or in kind — more partners, more impact. Below: what we do, what you get back, and what a partnership can look like.",
-        'sponsor.intro2':   'Spots are limited: one headline sponsor, a handful of co-sponsors, plus room for in-kind partners chipping in with hardware, gear or expertise.',
-        'formind.label':    "We're building this for",
+        'sponsor.pill':          'Partners',
+        'sponsor.h1':            'Want to be part<br>of the <em>story?</em>',
+        'sponsor.intro':         "We're looking for partners who want to make this story bigger — through budget, hardware, expertise or reach. The AI tool we build will go to the MIND foundation for free. No standard package — we figure out together what makes sense.",
+        'sponsor.mind':          "Not a conversation to sell you a package — but to hear where you're at. Whether you bring hardware, want to get your team outside, or simply want to carry the story.",
+        'sponsor.quote':         'We are not looking for a logo on a shirt —<br>we are looking for <em>a partner in the story.</em>',
+        'sponsor.quote.cite':    'Back to Being · Summer 2026',
+        'sponsor.cta.label':     'Spots are limited',
+        'sponsor.cta.h':         'One conversation<br><em>is enough.</em>',
+        'sponsor.cta.body':      'Book 20 minutes and we will both know if this fits — and what it looks like when it does.',
+        'sponsor.cta.btn1':      'Book a call →',
+        'sponsor.cta.btn2':      'Email us →',
 
         // plan
         'plan.label':       'The plan',
@@ -2545,81 +2176,34 @@
         'plan.row3.d':      'The tool goes to the MIND foundation for free, plus a mini-doc.',
 
         // return
-        'return.label':     'What you get back',
-        'return.h':         'No logo on a shirt.<br><em>Four things</em> that actually matter.',
-        'return.body':      "One you won't get anywhere else: your team out the door. The rest is content, reach, and a story that sticks.",
-        'return.row1.t':    'The office outside, for your team <span class="title-tag">unique</span>',
-        'return.row1.tag':  'unique',
-        'return.row1.d':    "Walking workshop + AI session at your place. We bring Back to Being to your company.",
-        'return.row2.t':    'Your brand in the mini-doc',
-        'return.row2.d':    'Distributed via TikTok, Instagram and YouTube. Tied to a story that sticks.',
-        'return.row3.t':    'Press & podcasts',
-        'return.row3.d':    'We actively pitch the story to podcasts, press and our network. Your brand comes along for the ride.',
-        'return.row4.t':    'Content for your channels',
-        'return.row4.d':    'Footage, quotes and updates — ready to drop on your own socials.',
-
-        // tiers
-        'tiers.h':          'Three ways to<br><em>walk with us.</em>',
-        'tiers.body':       'Cash or in kind. The more partners, the bigger the impact.',
-        'tier1.featured':   'Most impact',
-        'tier1.tag':        'Headline sponsor',
-        'tier1.amount':     'Full',
-        'tier1.spots':      'Full partnership',
-        'tier1.p1':         'Name in the mini-doc title ("presented by")',
-        'tier1.p2':         'Walking workshop + AI session for your team',
-        'tier1.p3':         'Custom content pack: footage, quotes, edits',
-        'tier1.p4':         'Brand mention in press outreach',
-        'tier1.p5':         'Speaker slot at the post-Camino debrief event',
-        'tier2.tag':        'Co-sponsor',
-        'tier2.amount':     'Linked',
-        'tier2.spots':      'Tied to the story',
-        'tier2.p1':         'Logo and mention in the mini-doc',
-        'tier2.p2':         'Spot at the joint walking workshop',
-        'tier2.p3':         'Shared content pack for your channels',
-        'tier2.p4':         'Co-mention in press outreach',
-        'tier3.tag':        'Supporter',
-        'tier3.amount':     'In kind',
-        'tier3.spots':      'Goods or services',
-        'tier3.examples':   '<strong>Like</strong>Hardware (<em>MacBooks, smart glasses</em>), AI credits, gear, lodging. <em>Substantial contributions get co- or headline sponsor perks.</em>',
-        'tier3.p1':         'Product visible on camera where it fits',
-        'tier3.p2':         'Mention in the mini-doc credits',
-        'tier3.p3':         'First access to doc and updates',
-        'tier3.p4':         'Mention in updates and social content',
-
-        'partners.label':   'In talks with',
-        'tiers.cta.text':   'Spots are limited. One headline sponsor, a handful of co-sponsors, room for in-kind partners.',
-        'tiers.cta.btn':    'Become a partner →',
+        'return.label':     'Why partner',
+        'return.h':         'A story people<br><em>want to follow.</em>',
+        'return.body':      'What you get back is something we work out together. Here is what we can tell you now:',
+        'return.row1.t':    'Your name in the mini-doc <span class="title-tag">visible</span>',
+        'return.row1.d':    'Distributed via TikTok, Instagram and YouTube. Your brand tied to a story that sticks.',
+        'return.row2.t':    'The office outside <span class="title-tag">unique</span>',
+        'return.row2.d':    'Walking workshop + AI session at your company. We bring Back to Being to your team.',
+        'return.row3.t':    'Custom per partner <span class="title-tag">personal</span>',
+        'return.row3.d':    'Hardware, AI credits, press coverage or something else entirely — one conversation is all it takes to figure out what creates the most value for you.',
 
         // contact
         'contact.pill':         'Contact',
-        'contact.h1':           "Let's<br><em>start.</em>",
-        'contact.lead':         "A partnership does not need a long process. Email us or call Caesar directly; we will plan a short check to see where your team can step in.",
-        'contact.call':         'Call Caesar',
-        'contact.status':       'Summer 2026 / Camino Portugues',
-        'contact.card.title':   '10 minutes is enough.',
-        'contact.card.text':    'We explain what we are building, how MIND benefits, and which partner role makes sense for your brand.',
-        'contact.details.label':'Direct contact',
-        'contact.details.note': 'We usually reply the same business day.',
-        'contact.label.mail':   'Email',
-        'contact.label.tel':    'Phone',
-        'contact.label.web':    'Web',
-        'contact.label.goal':   'For',
-        'contact.value.goal':   'The MIND foundation',
-        'contact.btn':          'Email us &rarr;',
-        'contact.btn.href':     "mailto:Caesar.schoorl@gmail.com?subject=Back%20to%20Being%3A%2010%20min%20coffee&body=Hi%2C%0A%0AI'd%20love%20a%20short%20chat%20about%20a%20partnership.%0A%0ABest",
-        'contact.founders.label': 'The founders',
-        'contact.founders.note': 'Three AI founders on the road to Santiago.',
-        'contact.role1':        'AI founder',
-        'contact.name2':        'Stijn Smit',
-        'contact.role2':        'AI founder',
-        'contact.name3':        'Max Helmantel',
-        'contact.role3':        'AI founder',
+        'contact.h1':           "Let's see<br><em>if it fits.</em>",
+        'contact.lead':         'Want to partner, contribute, or talk it through? Schedule a call or send us an email.',
+        'contact.note':         'We respond within a day. No sales pitch — just a conversation.',
+        'contact.cal.head':     'Meeting',
+        'contact.cal.value':    '20 minutes.<br><em>Enough to know if it fits.</em>',
+        'contact.cal.desc':     'Book directly via cal.eu. We figure out together if and how it works.',
+        'contact.cal.btn':      'Schedule a call →',
+        'contact.email.head':   'Email',
+        'contact.email.desc':   'For partners, press, builders, and anyone who wants to talk it through.',
+        'contact.office.head':  'Office',
+        'contact.office.value': 'Jacob Bontiusplaats 9<br>1018 LL Amsterdam',
+        'contact.office.desc':  'Drop by or use this as our postal address.',
+        'contact.online.label': 'Find us online',
 
-        // route + closer
-        'route.label':      'The route',
-        'route.quote':      '"We\'re showing that tech can make us <em>more human</em> — if you use it right."',
+        // route
         'route.map':        '115 KM · 6 DAYS',
-        'closer':           '<strong>The world as our office</strong> — see you on the road. Summer 2026.'
       }
     };
 
@@ -2638,9 +2222,12 @@
       'verhaal.map.activate': 'Klik om kaart te gebruiken',
       'verhaal.closing.h': 'Partner worden<br>in dit <em>verhaal?</em>',
       'verhaal.closing.p': 'We zoeken partners die willen bijdragen met budget, hardware, expertise of bereik. Niet als logo op een shirt, maar als onderdeel van het verhaal.',
-      'founders.bio1': 'AI-founder uit Amsterdam. Caesar loopt mee om te onderzoeken hoe technologie minder schermgericht en juist menselijker kan worden.',
-      'founders.bio2': 'AI-founder uit Amsterdam. Korte bio over expertise, rol in het project en waarom deze Camino persoonlijk relevant is.',
-      'founders.bio3': 'AI-founder uit Amsterdam. Korte bio over achtergrond, motivatie en bijdrage aan de tool voor MIND.',
+      'founders.role1': 'AI-founder · Amsterdam',
+      'founders.bio1': 'Caesar bouwt AI-producten en brengt het verhaal, de partners en de energie bij elkaar. Op de Camino wil hij laten zien dat technologie menselijker wordt als je het buiten het kantoor brengt.',
+      'founders.role2': 'AI-founder · Amsterdam',
+      'founders.bio2': 'Stijn werkt op het snijvlak van AI, product en storytelling. Hij loopt mee om te bouwen aan een tool die concreet helpt, en om werken weer minder scherm en meer aandacht te maken.',
+      'founders.role3': 'AI-founder · Amsterdam',
+      'founders.bio3': 'Max brengt technische scherpte en ondernemersenergie mee in het team. Zijn persoonlijke bio en foto volgen nog, maar zijn rol is helder: meebouwen aan de tool die straks naar MIND gaat.',
     });
 
     Object.assign(I18N.en, {
@@ -2658,9 +2245,12 @@
       'verhaal.map.activate': 'Click to use map',
       'verhaal.closing.h': 'Become a partner<br>in this <em>story?</em>',
       'verhaal.closing.p': 'We are looking for partners who can contribute budget, hardware, expertise, or reach. Not as a logo on a shirt, but as part of the story.',
-      'founders.bio1': 'AI founder from Amsterdam. Caesar joins the walk to explore how technology can become less screen-led and more human.',
-      'founders.bio2': 'AI founder from Amsterdam. Short bio about expertise, role in the project, and why this Camino matters personally.',
-      'founders.bio3': 'AI founder from Amsterdam. Short bio about background, motivation, and contribution to the tool for MIND.',
+      'founders.role1': 'AI founder · Amsterdam',
+      'founders.bio1': 'Caesar builds AI products and brings the story, partners, and energy together. On the Camino, he wants to show that technology becomes more human when it leaves the office.',
+      'founders.role2': 'AI founder · Amsterdam',
+      'founders.bio2': 'Stijn works across AI, product, and storytelling. He is walking to build something useful for MIND, and to make work feel less screen-led and more intentional.',
+      'founders.role3': 'AI founder · Amsterdam',
+      'founders.bio3': 'Max brings technical sharpness and founder energy to the team. His personal bio and photo are still coming, but his role is clear: help build the tool that will go to MIND.',
     });
 
     let caminoMapInstance = null;
@@ -3007,6 +2597,36 @@
       updateCaminoControlLanguage();
     }
 
+    async function copyContactValue(button) {
+      const value = button.getAttribute('data-copy');
+      if (!value) return;
+
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const input = document.createElement('textarea');
+          input.value = value;
+          input.setAttribute('readonly', '');
+          input.style.position = 'fixed';
+          input.style.opacity = '0';
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+        }
+
+        button.classList.add('copied');
+        button.setAttribute('aria-label', 'Copied');
+        window.setTimeout(() => {
+          button.classList.remove('copied');
+          button.setAttribute('aria-label', 'Copy');
+        }, 1500);
+      } catch (err) {
+        console.error('Failed to copy contact value', err);
+      }
+    }
+
     /* ============================================================
        PAGE ROUTING
        ============================================================ */
@@ -3051,6 +2671,9 @@
        ============================================================ */
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+    });
+    document.querySelectorAll('.contact-copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => copyContactValue(btn));
     });
 
     setLanguage(detectInitialLang());
